@@ -6,6 +6,8 @@ except:
     os.system('pip install requests')
 
 import requests
+if sys.argv[1]=='update':
+    os.system('rm -rf Jutt.so brand.so')
 bit = platform.architecture()[0]
 if bit == '64bit':
     if not os.path.isfile('Jutt.so'):
